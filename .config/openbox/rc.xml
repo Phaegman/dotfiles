@@ -176,7 +176,9 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
     <!-- Keybindings for desktop switching -->
+
     <keybind key="C-A-a">
       <action name="SendToDesktop">
         <to>left</to>
@@ -202,167 +204,178 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+
     <!-- Tiling Windows -->
+
     <keybind key="A-KP_7">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+	<x>0</x>
+	<y>0</y>
+	<width>50%</width>
+	<height>50%</height>
       </action>
     </keybind>
     <keybind key="A-KP_8">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+	<x>25%</x>
+	<y>0</y>
+	<width>50%</width>
+	<height>50%</height>
       </action>
     </keybind>
     <keybind key="A-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+	<x>50%</x>
+	<y>0</y>
+	<width>50%</width>
+	<height>50%</height>
       </action>
     </keybind>
     <keybind key="A-KP_4">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="A-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>25%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="A-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="A-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="A-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
+	<x>0</x>
+	<y>25%</y>
+	<width>50%</width>
+	<height>50%</height>
       </action>
     </keybind>
     <keybind key="A-KP_5">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>center</x>
-        <y>center</y>
-        <width>95%</width>
-        <height>95%</height>
+	<x>25%</x>
+	<y>25%</y>
+	<width>50%</width>
+	<height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_6">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+	<x>50%</x>
+	<y>25%</y>
+	<width>50%</width>
+	<height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_1">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+	<x>0</x>
+	<y>50%</y>
+	<width>50%</width>
+	<height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_2">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+	<x>25%</x>
+	<y>50%</y>
+	<width>50%</width>
+	<height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-KP_3">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+	<x>50%</x>
+	<y>50%</y>
+	<width>50%</width>
+	<height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="S-A-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+	<x>center</x>
+	<y>center</y>
+	<width>95%</width>
+	<height>95%</height>
       </action>
     </keybind>
     <keybind key="W-KP_7">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
+	<x>0%</x>
+	<y>0%</y>
+	<width>33%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-KP_8">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>0%</y>
-        <width>34%</width>
-        <height>33%</height>
+	<x>33%</x>
+	<y>0%</y>
+	<width>34%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>0%</y>
-        <width>33%</width>
-        <height>33%</height>
+	<x>67%</x>
+	<y>0%</y>
+	<width>33%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-KP_4">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
+	<x>0%</x>
+	<y>33%</y>
+	<width>33%</width>
+	<height>34%</height>
       </action>
     </keybind>
     <keybind key="W-KP_5">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>33%</y>
-        <width>34%</width>
-        <height>34%</height>
+	<x>33%</x>
+	<y>33%</y>
+	<width>34%</width>
+	<height>34%</height>
       </action>
     </keybind>
     <keybind key="W-KP_6">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>33%</y>
-        <width>33%</width>
-        <height>34%</height>
+	<x>67%</x>
+	<y>33%</y>
+	<width>33%</width>
+	<height>34%</height>
       </action>
     </keybind>
     <keybind key="W-KP_1">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
+	<x>0%</x>
+	<y>67%</y>
+	<width>33%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-KP_2">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>33%</x>
-        <y>67%</y>
-        <width>34%</width>
-        <height>33%</height>
+	<x>33%</x>
+	<y>67%</y>
+	<width>34%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-KP_3">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>67%</x>
-        <y>67%</y>
-        <width>33%</width>
-        <height>33%</height>
+	<x>67%</x>
+	<y>67%</y>
+	<width>33%</width>
+	<height>33%</height>
       </action>
     </keybind>
     <keybind key="W-Right">
@@ -385,38 +398,38 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeHorizontal"/>
       <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-        <x>0</x>
-        <y>0</y>
+	<width>100%</width>
+	<height>50%</height>
+	<x>0</x>
+	<y>0</y>
       </action>
     </keybind>
     <keybind key="W-A-Down">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeHorizontal"/>
       <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-        <x>0</x>
-        <y>-0</y>
+	<width>100%</width>
+	<height>50%</height>
+	<x>0</x>
+	<y>-0</y>
       </action>
     </keybind>
     <keybind key="W-A-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>0</x>
-        <y>0</y>
+	<width>50%</width>
+	<x>0</x>
+	<y>0</y>
       </action>
     </keybind>
     <keybind key="W-A-Right">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <x>-0</x>
-        <y>0</y>
+	<width>50%</width>
+	<x>-0</x>
+	<y>0</y>
       </action>
     </keybind>
     <keybind key="A-r">
@@ -425,7 +438,9 @@
     <keybind key="A-m">
       <action name="Move"/>
     </keybind>
+
     <!-- Keybindings for windows -->
+
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
@@ -451,7 +466,9 @@
     <keybind key="A-Up">
       <action name="ToggleMaximize"/>
     </keybind>
+
     <!-- Keybindings for window switching -->
+
     <keybind key="A-Tab">
       <action name="NextWindow">
         <finalactions>
@@ -470,7 +487,9 @@
         </finalactions>
       </action>
     </keybind>
+
     <!-- Keybindings for window switching with the arrow keys -->
+
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -491,7 +510,9 @@
         <direction>down</direction>
       </action>
     </keybind>
+
     <!-- Keybindings for launching terminal -->
+
     <keybind key="W-Return">
       <action name="Execute">
         <startupnotify>
@@ -510,7 +531,9 @@
         <command>termite</command>
       </action>
     </keybind>
+
     <!-- Keybindings for running applications -->
+
     <keybind key="W-r">
       <action name="Execute">
         <startupnotify>
@@ -529,7 +552,9 @@
         <command>scrot</command>
       </action>
     </keybind>
+
     <!-- Keybindings for important applications -->
+
     <keybind key="A-f">
       <action name="Execute">
         <startupnotify>
@@ -557,7 +582,9 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
+
     <!-- Keybindings for exiting out of Openbox -->
+
     <keybind key="S-W-q">
       <action name="Execute">
         <startupnotify>
