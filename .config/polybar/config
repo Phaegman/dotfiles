@@ -1,0 +1,124 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+[colors]
+
+	background = #DF131C26
+	;background-alt = #444
+	foreground = #FFFFFF
+	foreground-alt = #725F8E
+	primary = #725F8E
+	secondary = #725F8E
+	alert = #B1525B
+
+[bar/i3]
+	monitor = ${env:MONITOR:DVI-D-0}
+	width = 100%
+	height = 27
+	offset-x = 26
+	offset-y = 00
+	radius = 0.0
+	fixed-center = true
+
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+
+	line-size = 4
+	line-color = ${colors.primary}
+
+	padding-left = 0
+	padding-right = 0
+
+	module-margin-left = 3
+	module-margin-right = 2
+
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = siji:pixelsize=10;1
+
+	modules-left = i3
+	modules-center = date
+	modules-right =  pulseaudio
+
+	wm-restack = i3
+
+	scroll-up = i3wm-wsnext
+	scroll-down = i3wm-wsprev
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+
+[module/i3]
+	type = internal/i3
+	format = <label-state> <label-mode>
+	pin-workspaces = true
+
+	label-focused = %name%
+	label-focused-foreground = ${colors.foreground}
+	label-focused-background = ${colors.background}
+	label-focused-underline = ${colors.primary}
+	label-focused-font = 4
+	label-focused-padding = 3
+
+	label-unfocused = %name%
+	label-unfocused-foreground = ${colors.foreground}
+	label-unfocused-background = ${colors.background}
+	label-unfocused-underline = ${colors.background}
+	label-unfocused-font = 4
+	label-unfocused-padding = 1
+
+	label-urgent = %name%
+	label-urgent-foreground = ${colors.foreground}
+	label-urgent-background = ${colors.alert}
+	label-urgent-underline = ${colors.alert}
+	label-urgent-font = 4
+	label-urgent-padding = 4
+
+	wrapping-scroll = false
+
+[module/date]
+	type = internal/date
+	interval = 1
+
+	date = %d/%m/%Y
+	time = %H:%M:%S
+
+	format-prefix-foreground = ${colors.foreground}
+	format-underline = ${colors.primary}
+
+	label = %date%  %time%
+
+[module/pulseaudio]
+	type = internal/pulseaudio
+
+	format-volume = <label-volume>    <bar-volume>
+	format-volume-underline = ${colors.primary}
+	label-volume = vol:  %percentage%
+	label-volume-foreground = ${colors.foreground}
+
+	label-muted = muted
+	label-muted-foreground = ${colors.alert}
+	label-muted-underline = ${colors.alert}
+
+	bar-volume-width = 10
+	bar-volume-foreground-0 = ${colors.primary}
+
+	bar-volume-indicator = |
+	bar-volume-indicator-foreground = ${colors.primary}
+
+	bar-volume-indicator-font = 2
+	bar-volume-fill = =
+	bar-volume-fill-font = 2
+
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground}
